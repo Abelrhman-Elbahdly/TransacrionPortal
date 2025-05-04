@@ -1,0 +1,13 @@
+<nav class="tags-bar" aria-label="navigation tags">
+  <ul>
+    <li *ngFor="let tag of tags">
+      <button
+        class="tag"
+        [class.active]="activeCategory === tag.category"
+        (click)="selectCategory(tag.category)"
+      >
+        {{ tag.label }}
+      </button>
+    </li>
+  </ul>
+</nav>

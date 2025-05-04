@@ -1,0 +1,9 @@
+.transaction-portal {
+  display: flex;
+  width: 1366px;
+  margin: 61px 167px 60px 167px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+}

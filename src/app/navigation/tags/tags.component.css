@@ -1,0 +1,31 @@
+.tags-bar nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.tags-bar ul {
+  display: flex;
+  gap: 14px;
+  list-style-type: none;
+  padding: 0px;
+}
+.tag {
+  font-family: inherit;
+  padding: 8px 14px;
+  text-align: center;
+  gap: 10px;
+  width: auto;
+  height: auto;
+  border-radius: var(--Border-10, 10px);
+  border: 1px solid var(--colors-4-misty-100, #9ca0b0);
+  color: var(--colors-3-legend-100, #636888);
+  cursor: pointer;
+  background-color: #f6f6f9;
+}
+.tag.active {
+  color: var(--colors-6-ray-100, #eeeef2);
+  border: 0px;
+  border-radius: var(--Border-10, 10px);
+  background: var(--colors-2-alpha-100, #060722);
+}

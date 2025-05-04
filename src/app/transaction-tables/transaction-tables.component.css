@@ -1,0 +1,110 @@
+.table-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 1032px;
+  height: 410px;
+}
+
+.transactions-table {
+  display: table;
+  position: relative;
+  padding: 24px;
+  flex-shrink: 0;
+  border-radius: var(--Border-20, 20px);
+  background: var(--colors-8-omega-100, #fff);
+  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.08);
+  text-align: right;
+}
+.transactions-table th i {
+  padding-left: 8px;
+  padding-right: 14px;
+  width: 16px;
+  height: 16px;
+}
+thead {
+  margin-bottom: 14px;
+}
+thead tr {
+  color: var(--colors-2-alpha-100, #060722);
+  padding: 0px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 0px var(--Border-12, 12px) 0px 0px;
+  border-bottom: 1px solid var(--colors-6-ray-100, #eeeef2);
+  background: var(--colors-7-haze-100, #f6f7f9);
+}
+th {
+  height: 44px;
+}
+th:first-child {
+  border-radius: 0px var(--Border-12, 12px) 0px 0px;
+}
+th:nth-child(6) {
+  width: 92px;
+}
+th:last-child {
+  border-radius: var(--Border-12, 12px) 0px 0px 0px;
+  border-bottom: 1px solid var(--colors-6-ray-100, #eeeef2);
+  background: var(--colors-7-haze-100, #f6f7f9);
+}
+tbody {
+  color: var(--colors-3-legend-100, #636888);
+  text-align: right;
+  font-size: 14px;
+  font-weight: 400;
+}
+tbody tr:nth-child(even) {
+  background: var(--colors-7-haze-100, #f6f7f9);
+}
+tbody td:nth-child(7) {
+  margin: 7px 14px;
+  width: 35px;
+  height: 44px;
+  flex-shrink: 0;
+}
+tbody tr i tr:nth-child(even) {
+  background: var(--colors-7-haze-100, #f6f7f9);
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+td {
+  border: 1px;
+  border-radius: var(--Border-4, 4px);
+}
+
+.status-success {
+  display: flex;
+  width: 92px;
+  height: 16px;
+  padding: 14px;
+  flex-shrink: 1;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: var(--Border-4, 4px);
+  background: var(--colors-11-positive-8, rgba(40, 190, 137, 0.08));
+  color: var(--colors-11-positive-100, #28be89);
+  text-align: right;
+  font-size: 14px;
+  font-weight: 400;
+}
+.status-failed {
+  color: var(--colors-12-negative-100, #e65151);
+  text-align: right;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  width: 92px;
+  height: 16px;
+  padding: 14px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: var(--Border-4, 4px);
+  background: var(--colors-12-negative-8, rgba(230, 81, 81, 0.08));
+}
