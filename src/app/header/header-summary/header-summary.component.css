@@ -43,3 +43,39 @@
   font-weight: 700;
   margin: 0px;
 }
+
+@media screen and (max-width: 1200px) {
+  .transactions-count-details p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .transactions-count-details p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .transactions-count-details p {
+    font-size: 14px;
+  }
+  .transactions-count-details h4 {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .transactions-count-details p {
+    font-size: 13px;
+  }
+  .transactions-count-details h4 {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .transactions-count-details p {
+    font-size: 12px;
+  }
+}
