@@ -16,10 +16,10 @@
   background: var(--colors-8-omega-100, #fff);
   color: var(--colors-2-alpha-100, #060722);
   text-align: center;
+  font-family: inherit;
   font-size: 16px;
   font-weight: 400;
   cursor: pointer;
-  font-family: inherit;
 }
 
 #arrow-down svg {
@@ -101,7 +101,7 @@
   outline: none;
 }
 
-.filter-form div:last-child {
+.filter-form-buttons {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -141,3 +141,4 @@
 .filter-form-buttons button[type="button"]:hover {
   background: var(--colors-6-ray-100, #eeeef2);
 }
+s
