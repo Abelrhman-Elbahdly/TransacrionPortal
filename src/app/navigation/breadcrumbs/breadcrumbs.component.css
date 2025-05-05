@@ -31,7 +31,6 @@
   line-height: normal;
 }
 
-/* For tablets */
 @media screen and (max-width: 1200px) {
   .breadcrumbs {
     width: 95%;
