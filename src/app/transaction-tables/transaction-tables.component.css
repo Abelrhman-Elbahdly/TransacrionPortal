@@ -129,3 +129,102 @@ td {
   border-radius: var(--Border-4, 4px) !important;
   background: var(--colors-12-negative-8, rgba(230, 81, 81, 0.08)) !important;
 }
+
+@media screen and (max-width: 1200px) {
+  .table-container {
+    width: 95%;
+  }
+
+  .transactions-table {
+    font-size: 13.5px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .table-container {
+    width: 90%;
+  }
+
+  .transactions-table {
+    font-size: 13px;
+    padding: 20px;
+  }
+
+  th,
+  td {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .table-container {
+    width: 95%;
+  }
+
+  .transactions-table {
+    font-size: 12px;
+    padding: 15px;
+  }
+
+  th,
+  td {
+    font-size: 12px;
+  }
+
+  .status-success,
+  .status-failed {
+    width: 80px;
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  tbody td:nth-child(7) {
+    margin: 5px 10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .table-container {
+    width: 100%;
+  }
+
+  .transactions-table {
+    font-size: 11px;
+    padding: 10px;
+  }
+
+  th,
+  td {
+    font-size: 11px;
+  }
+
+  .status-success,
+  .status-failed {
+    width: 70px;
+    padding: 8px;
+    font-size: 11px;
+  }
+
+  tbody td:nth-child(7) {
+    margin: 3px 8px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .transactions-table {
+    font-size: 10px;
+    padding: 8px;
+  }
+
+  th,
+  td {
+    font-size: 10px;
+  }
+
+  .status-success,
+  .status-failed {
+    width: 60px;
+    padding: 6px;
+    font-size: 10px;
+  }
+}
