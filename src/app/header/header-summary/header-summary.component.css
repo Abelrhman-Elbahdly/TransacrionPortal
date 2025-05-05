@@ -45,37 +45,109 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .header-summary {
+    padding: 20px;
+  }
+
   .transactions-count-details p {
     font-size: 16px;
   }
 }
 
 @media screen and (max-width: 992px) {
+  .header-summary {
+    padding: 16px;
+  }
+
+  .header-summary i {
+    width: 36px;
+    height: 36px;
+  }
+
+  .header-summary svg {
+    width: 16px;
+    height: 16px;
+  }
+
   .transactions-count-details p {
     font-size: 15px;
   }
 }
 
 @media screen and (max-width: 768px) {
+  .header-summary {
+    padding: 12px;
+    height: auto;
+    flex-wrap: wrap;
+  }
+
+  .header-summary i {
+    width: 32px;
+    height: 32px;
+  }
+
+  .header-summary svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .transactions-count-details {
+    flex: 1;
+  }
+
   .transactions-count-details p {
     font-size: 14px;
   }
+
   .transactions-count-details h4 {
     font-size: 11px;
   }
 }
 
 @media screen and (max-width: 576px) {
+  .header-summary {
+    padding: 10px;
+  }
+
+  .header-summary i {
+    width: 28px;
+    height: 28px;
+  }
+
+  .header-summary svg {
+    width: 12px;
+    height: 12px;
+  }
+
   .transactions-count-details p {
     font-size: 13px;
   }
+
   .transactions-count-details h4 {
     font-size: 10px;
   }
 }
 
 @media screen and (max-width: 400px) {
+  .header-summary {
+    padding: 8px;
+  }
+
+  .header-summary i {
+    width: 24px;
+    height: 24px;
+  }
+
+  .header-summary svg {
+    width: 10px;
+    height: 10px;
+  }
+
   .transactions-count-details p {
     font-size: 12px;
+  }
+
+  .transactions-count-details h4 {
+    font-size: 9px;
   }
 }
