@@ -77,12 +77,16 @@ header {
     width: 95% !important;
     padding: 16px;
     gap: 10px;
+    flex-wrap: wrap;
+    height: auto;
   }
 
   .header-buttons {
     width: 100%;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
   }
 
   .header-buttons app-filter {
@@ -103,8 +107,13 @@ header {
     padding: 12px;
   }
 
+  .header-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
   .header-buttons button {
-    width: 140px;
+    width: 100%;
     font-size: 13px;
     padding: 8px 12px;
   }
@@ -116,7 +125,6 @@ header {
   }
 
   .header-buttons button {
-    width: 120px;
     font-size: 12px;
     padding: 6px 10px;
   }
