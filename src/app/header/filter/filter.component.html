@@ -30,7 +30,7 @@
 
   <div [class.hidden]="!showForm" class="filter-form">
     <form [formGroup]="filterForm" (ngSubmit)="applyFilters()">
-      <div>
+      <div class="filter-form-item">
         <label>التاجر:</label>
         <select formControlName="merchant">
           <option value="">الكل</option>
@@ -39,7 +39,7 @@
           </option>
         </select>
       </div>
-      <div>
+      <div class="filter-form-item">
         <label>الحالة:</label>
         <select formControlName="condition">
           <option value="">الكل</option>
@@ -48,7 +48,7 @@
           </option>
         </select>
       </div>
-      <div>
+      <div class="filter-form-item">
         <label>التاريخ:</label>
         <select formControlName="date">
           <option value="">الكل</option>
@@ -57,7 +57,7 @@
           </option>
         </select>
       </div>
-      <div>
+      <div class="filter-form-buttons">
         <button type="submit">تطبيق</button>
         <button type="button" (click)="clearFilters()">مسح</button>
         <button type="button" (click)="toggleForm()">إغلاق</button>
