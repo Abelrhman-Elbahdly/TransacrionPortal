@@ -1,5 +1,5 @@
 .breadcrumbs {
-  width: 984px;
+  width: 1032px;
   height: 16px;
   border-radius: var(--Max-Border, 2000px);
   background: var(--colors-8-omega-100, #fff);
@@ -34,11 +34,8 @@
 @media screen and (max-width: 1200px) {
   .breadcrumbs {
     width: 95%;
-  }
-
-  .breadcrumb-users,
-  .breadcrumb-current-user {
-    font-size: 13.5px;
+    height: auto;
+    min-height: 16px;
   }
 }
 
@@ -47,11 +44,6 @@
     width: 90%;
     padding: 12px 20px;
   }
-
-  .breadcrumb-users,
-  .breadcrumb-current-user {
-    font-size: 13px;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -59,15 +51,12 @@
     width: 95%;
     padding: 10px 16px;
     gap: 8px;
+    height: auto;
+    flex-wrap: wrap;
   }
 
   .arrow-left {
     margin: 0 10px;
-  }
-
-  .breadcrumb-users,
-  .breadcrumb-current-user {
-    font-size: 12px;
   }
 }
 
@@ -81,11 +70,6 @@
   .arrow-left {
     margin: 0 8px;
   }
-
-  .breadcrumb-users,
-  .breadcrumb-current-user {
-    font-size: 11px;
-  }
 }
 
 @media screen and (max-width: 400px) {
@@ -96,10 +80,5 @@
 
   .arrow-left {
     margin: 0 6px;
-  }
-
-  .breadcrumb-users,
-  .breadcrumb-current-user {
-    font-size: 10px;
   }
 }
