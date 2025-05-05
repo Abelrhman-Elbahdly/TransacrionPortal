@@ -4,12 +4,14 @@
   align-items: flex-start;
   flex-direction: row;
 }
+
 .tags-bar ul {
   display: flex;
   gap: 14px;
   list-style-type: none;
   padding: 0px;
 }
+
 .tag {
   font-family: inherit;
   padding: 8px 14px;
@@ -25,9 +27,82 @@
   cursor: pointer;
   background-color: #f6f6f9;
 }
+
 .tag.active {
   color: var(--colors-6-ray-100, #eeeef2);
   border: 0px;
   border-radius: var(--Border-10, 10px);
   background: var(--colors-2-alpha-100, #060722);
+}
+
+@media screen and (max-width: 1200px) {
+  .tags-bar {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .tag {
+    font-size: 13.5px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .tags-bar {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .tags-bar ul {
+    gap: 12px;
+  }
+
+  .tag {
+    font-size: 13px;
+    padding: 7px 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tags-bar {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .tags-bar ul {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .tag {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .tags-bar {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .tags-bar ul {
+    gap: 8px;
+    justify-content: center;
+  }
+
+  .tag {
+    font-size: 11px;
+    padding: 5px 8px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .tags-bar ul {
+    gap: 6px;
+  }
+
+  .tag {
+    font-size: 10px;
+    padding: 4px 6px;
+  }
 }
