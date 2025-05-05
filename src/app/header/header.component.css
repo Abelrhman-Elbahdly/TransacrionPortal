@@ -1,7 +1,7 @@
 header {
   display: flex;
-  width: 983px !important;
-  height: 41px;
+  width: 1032px !important;
+  height: 89px !important;
   padding: 24.5px 24px;
   flex-direction: row;
   justify-content: flex-start;
@@ -52,10 +52,8 @@ header {
 @media screen and (max-width: 1200px) {
   header {
     width: 95% !important;
-  }
-
-  .header-buttons button {
-    font-size: 15.5px;
+    height: auto !important;
+    min-height: 89px;
   }
 }
 
@@ -78,7 +76,6 @@ header {
     padding: 16px;
     gap: 10px;
     flex-wrap: wrap;
-    height: auto;
   }
 
   .header-buttons {
