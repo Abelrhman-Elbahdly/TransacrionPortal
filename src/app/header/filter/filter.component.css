@@ -141,3 +141,96 @@
 .filter-form-buttons button[type="button"]:hover {
   background: var(--colors-6-ray-100, #eeeef2);
 }
+
+@media screen and (max-width: 768px) {
+  .filter-container button {
+    width: 80px;
+    height: 36px;
+    font-size: 14px;
+    gap: 8px;
+  }
+
+  .filter-form {
+    width: 180px;
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .filter-form label {
+    font-size: 13px;
+  }
+
+  .filter-form select {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+
+  .filter-form-buttons button {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .filter-container button {
+    width: 70px;
+    height: 32px;
+    font-size: 13px;
+    gap: 6px;
+  }
+
+  .filter-form {
+    width: 160px;
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .filter-form label {
+    font-size: 12px;
+  }
+
+  .filter-form select {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  .filter-form-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .filter-form-buttons button {
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .filter-container button {
+    width: 60px;
+    height: 30px;
+    font-size: 12px;
+    gap: 4px;
+  }
+
+  .filter-form {
+    width: 140px;
+    padding: 10px;
+    gap: 8px;
+  }
+
+  .filter-form label {
+    font-size: 11px;
+  }
+
+  .filter-form select {
+    padding: 4px 8px;
+    font-size: 11px;
+  }
+
+  .filter-form-buttons button {
+    padding: 4px 8px;
+    font-size: 11px;
+  }
+}
