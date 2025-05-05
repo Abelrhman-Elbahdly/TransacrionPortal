@@ -28,7 +28,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let transaction of transactions">
+      <tr *ngFor="let transaction of filteredTransactions">
         <td>{{ transaction.id }}</td>
         <td>{{ transaction.branch }}</td>
         <td>{{ transaction.merchant }}</td>

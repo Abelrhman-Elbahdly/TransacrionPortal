@@ -14,9 +14,11 @@
   font-family: inherit;
   padding: 8px 14px;
   text-align: center;
-  gap: 10px;
   width: auto;
   height: auto;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
   border-radius: var(--Border-10, 10px);
   border: 1px solid var(--colors-4-misty-100, #9ca0b0);
   color: var(--colors-3-legend-100, #636888);

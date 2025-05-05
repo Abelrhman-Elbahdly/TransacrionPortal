@@ -3,7 +3,7 @@
     <app-header-summary></app-header-summary>
   </section>
   <section class="header-buttons">
-    <app-filter></app-filter>
+    <app-filter (filterChange)="onFilterChange($event)"></app-filter>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="1"

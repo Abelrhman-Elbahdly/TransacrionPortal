@@ -1,6 +1,6 @@
 .breadcrumbs {
-  width: 1032px;
-  height: auto;
+  width: 984px;
+  height: 16px;
   border-radius: var(--Max-Border, 2000px);
   background: var(--colors-8-omega-100, #fff);
   display: flex;

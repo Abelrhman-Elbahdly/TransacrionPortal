@@ -1,0 +1,138 @@
+.filter-container {
+  position: relative;
+  z-index: 1;
+}
+
+.filter-container button {
+  display: flex;
+  width: 93px;
+  height: 40px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 11px;
+  border-radius: var(--Border-8, 8px);
+  border: 1px solid var(--colors-5-light-100, #c9cbd5);
+  background: var(--colors-8-omega-100, #fff);
+  color: var(--colors-2-alpha-100, #060722);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+#arrow-down svg {
+  margin: 0;
+  padding: 0;
+  width: 8px;
+  height: 8px;
+}
+#filter-icon svg {
+  margin: 0;
+  padding: 0;
+  width: 12px;
+  height: 12px;
+}
+
+.filter-form {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  border-radius: 20px;
+  background: var(--colors-8-omega-100, #fff);
+  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.08);
+  margin-top: 8px;
+  opacity: 1;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.filter-form.hidden {
+  display: none;
+}
+
+.filter-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  transition: all 0.3s ease 0.1s;
+}
+
+.filter-form div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.filter-form label {
+  color: var(--colors-2-alpha-100, #060722);
+  text-align: right;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.filter-form select {
+  display: flex;
+  padding: 8px 16px;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid var(--colors-6-ray-100, #eeeef2);
+  background: var(--colors-8-omega-100, #fff);
+  color: var(--colors-2-alpha-100, #060722);
+  text-align: right;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.filter-form select:focus {
+  border-color: var(--colors-1-primary-100, #0045ad);
+  outline: none;
+}
+
+.filter-form div:last-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.filter-form div:last-child button {
+  display: flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  text-align: right;
+  font-size: 14px;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+}
+
+.filter-form div:last-child button[type="submit"] {
+  background: var(--colors-1-primary-100, #0045ad);
+  color: var(--colors-8-omega-100, #fff);
+}
+
+.filter-form div:last-child button[type="submit"]:hover {
+  background: var(--colors-1-primary-80, #1a57bd);
+}
+
+.filter-form div:last-child button[type="button"] {
+  background: var(--colors-7-haze-100, #f6f7f9);
+  color: var(--colors-2-alpha-100, #060722);
+}
+
+.filter-form div:last-child button[type="button"]:hover {
+  background: var(--colors-6-ray-100, #eeeef2);
+}

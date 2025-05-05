@@ -1,6 +1,6 @@
 <div class="transaction-portal">
   <app-breadcrumbs></app-breadcrumbs>
   <app-tags></app-tags>
-  <app-header></app-header>
+  <app-header (filterChange)="onFilterChange($event)"></app-header>
   <app-transaction-tables></app-transaction-tables>
 </div>
