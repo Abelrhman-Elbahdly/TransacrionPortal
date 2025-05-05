@@ -30,3 +30,77 @@
   font-weight: 700;
   line-height: normal;
 }
+
+/* For tablets */
+@media screen and (max-width: 1200px) {
+  .breadcrumbs {
+    width: 95%;
+  }
+
+  .breadcrumb-users,
+  .breadcrumb-current-user {
+    font-size: 13.5px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .breadcrumbs {
+    width: 90%;
+    padding: 12px 20px;
+  }
+
+  .breadcrumb-users,
+  .breadcrumb-current-user {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .breadcrumbs {
+    width: 95%;
+    padding: 10px 16px;
+    gap: 8px;
+  }
+
+  .arrow-left {
+    margin: 0 10px;
+  }
+
+  .breadcrumb-users,
+  .breadcrumb-current-user {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .breadcrumbs {
+    width: 100%;
+    padding: 8px 12px;
+    gap: 6px;
+  }
+
+  .arrow-left {
+    margin: 0 8px;
+  }
+
+  .breadcrumb-users,
+  .breadcrumb-current-user {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .breadcrumbs {
+    padding: 6px 10px;
+    gap: 4px;
+  }
+
+  .arrow-left {
+    margin: 0 6px;
+  }
+
+  .breadcrumb-users,
+  .breadcrumb-current-user {
+    font-size: 10px;
+  }
+}
